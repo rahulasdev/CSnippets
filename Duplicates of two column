@@ -1,0 +1,12 @@
+create table examination (
+  id int ,
+  subject varchar(255)
+);
+create table student(
+  id int primary key,
+  name varchar(255)
+);
+insert into student (id,name) values (1,'name1'),(2,'name2'),(3,'name3');
+insert into examination (id,subject) values (1,'history'),(2,'history'),(3,'geography'),(3,'geography'),(3,'maths');
+
+select distinct(subject),count(subject) from examination group by id,subject 
