@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main(void){
+   	
+	int n;
+    
+	int count=0;
+	int sum=0;
+	scanf("%d",&n);
+	for(int i=1;i<=(n/2)+1;i++){
+		sum = 0;
+		for(int j=i;j<=(n/2)+1;j++){
+			sum=sum+j;
+			
+		
+		if(sum==n){
+			count++;
+			sum=0;
+			break;
+		}
+			
+		}
+	}
+	printf("%d",count);
+	return 0;
+}
